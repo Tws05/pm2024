@@ -1,256 +1,581 @@
 <!DOCTYPE html>
-<html lang="ja">
+<html lang="id">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ujian Soal</title>
+    <title>Soal Ujian</title>
     <style>
         body {
             font-family: Arial, sans-serif;
+            line-height: 1.6;
             margin: 20px;
             padding: 20px;
+            background-color: #f4f4f4;
+        }
+        h1 {
+            text-align: center;
+        }
+        h2 {
+            margin-top: 20px;
+            color: #333;
             background-color: #f9f9f9;
         }
         .soal {
+            background: #fff;
+            padding: 10px;
+            margin: 10px 0;
+            border-radius: 5px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+        .jawaban {
+            background: #dff0d8;
+            padding: 10px;
+            border: 1px solid #c3e6cb;
+            border-radius: 5px;
+            margin-top: 10px;
             margin-bottom: 20px;
         }
         .result {
             margin-top: 20px;
             font-weight: bold;
+            color: green;
         }
     </style>
 </head>
 <body>
-    <h1>Ujian Soal</h1>
-    <form id="quiz-form">
-        <div class="soal">
-            <h2>Soal 1:</h2>
-            <p>飲食料品製造業に関して、次のうち正しい説明はどれですか？</p>
-            <p>a) <input type="radio" name="q1" value="a"> 飲食料品製造業は私たちの生活に欠かせない仕事である。</p>
-            <p>b) <input type="radio" name="q1" value="b"> 飲食料品製造業は日本の消費にほとんど影響しない。</p>
-            <p>c) <input type="radio" name="q1" value="c"> 飲食料品製造業は主に農業を中心とした産業である。</p>
-            <p>d) <input type="radio" name="q1" value="d"> 飲食料品製造業は日本国内の消費量に減少している。</p>
-        </div>
 
-        <div class="soal">
-            <h2>Soal 2:</h2>
-            <p>2021年の日本の食品製造業の国内生産額はどれくらいですか？</p>
-            <p>a) <input type="radio" name="q2" value="a"> 約35兆円</p>
-            <p>b) <input type="radio" name="q2" value="b"> 約36兆円</p>
-            <p>c) <input type="radio" name="q2" value="c"> 約37兆円</p>
-            <p>d) <input type="radio" name="q2" value="d"> 約38兆円</p>
-        </div>
+    <h1>Soal Ujian</h1>
+    <form id="quizForm">
+       <!-- Question 1 -->
+<div>
+    <p>1. Apa arti dari istilah "飲料 (いんりょう)" dalam konteks pengolahan makanan?</p>
+    <input type="radio" name="soal1" value="a"> a) Bahan makanan<br>
+    <input type="radio" name="soal1" value="b"> b) Minuman<br>
+    <input type="radio" name="soal1" value="c"> c) Makanan pendamping<br>
+    <input type="radio" name="soal1" value="d"> d) Makanan olahan<br>
+</div>
 
-        <div class="soal">
-            <h2>Soal 3:</h2>
-            <p>グラフによると、食品製造業の国内生産額は2018年にどれくらいのピークを迎えましたか？</p>
-            <p>a) <input type="radio" name="q3" value="a"> 約36,291億円</p>
-            <p>b) <input type="radio" name="q3" value="b"> 約37,846億円</p>
-            <p>c) <input type="radio" name="q3" value="c"> 約37,688億円</p>
-            <p>d) <input type="radio" name="q3" value="d"> 約38,000億円</p>
-        </div>
+<!-- Question 2 -->
+<div>
+    <p>2. Industri yang berhubungan dengan pembuatan makanan dan minuman disebut dalam bahasa Jepang sebagai?</p>
+    <input type="radio" name="soal2" value="a"> a) 飲料（いんりょう）<br>
+    <input type="radio" name="soal2" value="b"> b) 飲食料品製造業（いんしょくりょうひんせいぞうぎょう）<br>
+    <input type="radio" name="soal2" value="c"> c) 食品衛生（しょくひんえいせい）<br>
+    <input type="radio" name="soal2" value="d"> d) 食中毒（しょくちゅうどく）<br>
+</div>
 
-        <div class="soal">
-            <h2>Soal 4:</h2>
-            <p>2021年の食品製造業において、最も大きな割合を占めるのは次のうちどれですか？</p>
-            <p>a) <input type="radio" name="q4" value="a"> 乳製品</p>
-            <p>b) <input type="radio" name="q4" value="b"> 水産食料品</p>
-            <p>c) <input type="radio" name="q4" value="c"> 惣菜・調理食品</p>
-            <p>d) <input type="radio" name="q4" value="d"> その他の飲食料品</p>
-        </div>
+<!-- Question 3 -->
+<div>
+    <p>3. Istilah "欠かせません (かかせません)" dalam bahasa Indonesia memiliki arti?</p>
+    <input type="radio" name="soal3" value="a"> a) Proses<br>
+    <input type="radio" name="soal3" value="b"> b) Ini penting<br>
+    <input type="radio" name="soal3" value="c"> c) Tidak disarankan<br>
+    <input type="radio" name="soal3" value="d"> d) Memakai<br>
+</div>
 
-        <div class="soal">
-            <h2>Soal 5:</h2>
-            <p>2021年のデータによると、次のうち最も生産割合が少ないものはどれですか？</p>
-            <p>a) <input type="radio" name="q5" value="a"> レトルト食品</p>
-            <p>b) <input type="radio" name="q5" value="b"> 乳製品</p>
-            <p>c) <input type="radio" name="q5" value="c"> 酒類・飲料</p>
-            <p>d) <input type="radio" name="q5" value="d"> パン類</p>
-        </div>
+<!-- Question 4 -->
+<div>
+    <p>4. Apa arti dari istilah "製造する (せいぞうする)"?</p>
+    <input type="radio" name="soal4" value="a"> a) Menyimpan<br>
+    <input type="radio" name="soal4" value="b"> b) Pembuatan<br>
+    <input type="radio" name="soal4" value="c"> c) Pembersihan<br>
+    <input type="radio" name="soal4" value="d"> d) Mencetak<br>
+</div>
 
-        <div class="soal">
-            <h2>Soal 6:</h2>
-            <p>飲食料品製造業における「その他の飲食料品」の生産割合はどれくらいですか？</p>
-            <p>a) <input type="radio" name="q6" value="a"> 9.6%</p>
-            <p>b) <input type="radio" name="q6" value="b"> 8.3%</p>
-            <p>c) <input type="radio" name="q6" value="c"> 2.4%</p>
-            <p>d) <input type="radio" name="q6" value="d"> 2.8%</p>
-        </div>
+<!-- Question 5 -->
+<div>
+    <p>5. Apa arti "惣菜 (そうざい)" dalam pengolahan makanan?</p>
+    <input type="radio" name="soal5" value="a"> a) Ikan kaleng<br>
+    <input type="radio" name="soal5" value="b"> b) Makanan pendamping<br>
+    <input type="radio" name="soal5" value="c"> c) Minuman<br>
+    <input type="radio" name="soal5" value="d"> d) Bahan makanan<br>
+</div>
 
-        <div class="soal">
-            <h2>Soal 7:</h2>
-            <p>「食品衛生」の主な目的は次のうちどれですか？</p>
-            <p>a) <input type="radio" name="q7" value="a"> 食べ物を美味しくすること</p>
-            <p>b) <input type="radio" name="q7" value="b"> 食べ物を腐らせること</p>
-            <p>c) <input type="radio" name="q7" value="c"> 食べ物を安全に保つこと</p>
-            <p>d) <input type="radio" name="q7" value="d"> 食べ物を早く作ること</p>
-        </div>
+<!-- Question 6 -->
+<div>
+    <p>6. Apa istilah untuk "makanan beku" dalam bahasa Jepang?</p>
+    <input type="radio" name="soal6" value="a"> a) 冷凍食品 (れいとうしょくひん)<br>
+    <input type="radio" name="soal6" value="b"> b) 飲食料品 (いんしょくりょうひん)<br>
+    <input type="radio" name="soal6" value="c"> c) 加工食品 (かこうしょくひん)<br>
+    <input type="radio" name="soal6" value="d"> d) 生鮮食品 (せいせんしょくひん)<br>
+</div>
 
-        <div class="soal">
-            <h2>Soal 8:</h2>
-            <p>「労働安全」について正しいのはどれですか？</p>
-            <p>a) <input type="radio" name="q8" value="a"> 作業中に安全具を着用しなくても良い</p>
-            <p>b) <input type="radio" name="q8" value="b"> 工場で決められたルールを守ることが大切である</p>
-            <p>c) <input type="radio" name="q8" value="c"> 労働安全は機械の修理に関係ない</p>
-            <p>d) <input type="radio" name="q8" value="d"> 作業中はヘルメットを外しても良い</p>
-        </div>
+<!-- Question 7 -->
+<div>
+    <p>7. Manakah yang merupakan contoh industri manufaktur makanan dan minuman di Jepang?</p>
+    <input type="radio" name="soal7" value="a"> a) 統計 (とうけい)<br>
+    <input type="radio" name="soal7" value="b"> b) 魚の缶詰 (さかなのかんづめ)<br>
+    <input type="radio" name="soal7" value="c"> c) 食品衛生 (しょくひんえいせい)<br>
+    <input type="radio" name="soal7" value="d"> d) 兆円 (ちょうえん)<br>
+</div>
 
-        <div class="soal">
-            <h2>Soal 9:</h2>
-            <p>工場で「労働安全」を守るために、作業者が正しく着用しなければならないものは次のうちどれですか？</p>
-            <p>a) <input type="radio" name="q9" value="a"> 作業服やヘルメット</p>
-            <p>b) <input type="radio" name="q9" value="b"> スニーカーやTシャツ</p>
-            <p>c) <input type="radio" name="q9" value="c"> カジュアルな服装</p>
-            <p>d) <input type="radio" name="q9" value="d"> 普段着</p>
-        </div>
+<!-- Question 8 -->
+<div>
+    <p>8. Istilah untuk "keahlian khusus tingkat 1" dalam bahasa Jepang adalah?</p>
+    <input type="radio" name="soal8" value="a"> a) 特定技能1号 (とくていぎのう1ごう)<br>
+    <input type="radio" name="soal8" value="b"> b) 知識 (ちしき)<br>
+    <input type="radio" name="soal8" value="c"> c) 信用 (しんよう)<br>
+    <input type="radio" name="soal8" value="d"> d) 食中毒 (しょくちゅうどく)<br>
+</div>
 
-        <div class="soal">
-            <h2>Soal 10:</h2>
-            <p>食品製造業者が守るべきことは次のうちどれですか？</p>
-            <p>a) <input type="radio" name="q10" value="a"> 食品を無許可で販売すること</p>
-            <p>b) <input type="radio" name="q10" value="b"> 食品衛生管理を遵守すること</p>
-            <p>c) <input type="radio" name="q10" value="c"> 不衛生な環境で作業すること</p>
-            <p>d) <input type="radio" name="q10" value="d"> 食品の賞味期限を無視すること</p>
-        </div>
+<!-- Question 9 -->
+<div>
+    <p>9. Apa arti dari istilah "農林水産省 (のうりんすいさんしょう)"?</p>
+    <input type="radio" name="soal9" value="a"> a) Kementerian Kehutanan<br>
+    <input type="radio" name="soal9" value="b"> b) Kementerian Pertanian Kehutanan dan Perikanan<br>
+    <input type="radio" name="soal9" value="c"> c) Kementerian Industri<br>
+    <input type="radio" name="soal9" value="d"> d) Kementerian Makanan dan Minuman<br>
+</div>
 
-        <div class="soal">
-            <h2>Soal 11:</h2>
-            <p>工場で機械や器具を使うとき、どのように作業すべきですか？</p>
-            <p>a) <input type="radio" name="q11" value="a"> 工場で決められているルールや作業手順を守る</p>
-            <p>b) <input type="radio" name="q11" value="b"> 自分のやり方で作業する</p>
-            <p>c) <input type="radio" name="q11" value="c"> 安全具を着けずに作業する</p>
-            <p>d) <input type="radio" name="q11" value="d"> ルールを無視して作業を進める</p>
-        </div>
+<!-- Question 10 -->
+<div>
+    <p>10. Manakah di antara berikut ini yang berarti "statistik" dalam bahasa Jepang?</p>
+    <input type="radio" name="soal10" value="a"> a) 国内生産額 (こくないせいさんがく)<br>
+    <input type="radio" name="soal10" value="b"> b) 統計 (とうけい)<br>
+    <input type="radio" name="soal10" value="c"> c) 数年 (すうねん)<br>
+    <input type="radio" name="soal10" value="d"> d) 特定技能1号 (とくていぎのう1ごう)<br>
+</div>
 
-        <div class="soal">
-            <h2>Soal 12:</h2>
-            <p>食品衛生の基本的な行動の一つは何ですか？</p>
-            <p>a) <input type="radio" name="q12" value="a"> 作業中に手袋を外す</p>
-            <p>b) <input type="radio" name="q12" value="b"> 汚染された器具を使う</p>
-            <p>c) <input type="radio" name="q12" value="c"> 清潔な設備、機械、器具を使う</p>
-            <p>d) <input type="radio" name="q12" value="d"> 食品を適当な温度で保管しない</p>
-        </div>
+<!-- Question 11 -->
+<div>
+    <p>11. Apakah arti dari "安全保護具 (あんぜんほごぐ)"?</p>
+    <input type="radio" name="soal11" value="a"> a) Peralatan perlindungan keselamatan<br>
+    <input type="radio" name="soal11" value="b"> b) Proses kerja yang aman<br>
+    <input type="radio" name="soal11" value="c"> c) Kredibilitas<br>
+    <input type="radio" name="soal11" value="d"> d) Pengetahuan dasar<br>
+</div>
 
-        <div class="soal">
-            <h2>Soal 13:</h2>
-            <p>次のうち、「一般衛生管理」で重要なことはどれですか？</p>
-            <p>a) <input type="radio" name="q13" value="a"> 施設や設備の衛生管理</p>
-            <p>b) <input type="radio" name="q13" value="b"> 機械を壊すこと</p>
-            <p>c) <input type="radio" name="q13" value="c"> 手洗いをしないこと</p>
-            <p>d) <input type="radio" name="q13" value="d"> 作業者の衛生を無視すること</p>
-        </div>
+<!-- Question 12 -->
+<div>
+    <p>12. Apa yang dimaksud dengan "生命 (せいめい)" dalam konteks keselamatan kerja?</p>
+    <input type="radio" name="soal12" value="a"> a) Keahlian<br>
+    <input type="radio" name="soal12" value="b"> b) Kredibilitas<br>
+    <input type="radio" name="soal12" value="c"> c) Kehidupan<br>
+    <input type="radio" name="soal12" value="d"> d) Keselamatan kerja<br>
+</div>
 
-        <div class="soal">
-            <h2>Soal 14:</h2>
-            <p>「HACCPプラン」は何を含んでいますか？</p>
-            <p>a) <input type="radio" name="q14" value="a"> 作業者の指導</p>
-            <p>b) <input type="radio" name="q14" value="b"> 原材料や製品の衛生管理</p>
-            <p>c) <input type="radio" name="q14" value="c"> 機械の修理</p>
-            <p>d) <input type="radio" name="q14" value="d"> 作業手順を守らないこと</p>
-        </div>
+<!-- Question 13 -->
+<div>
+    <p>13. Arti dari "食品衛生 (しょくひんえいせい)" adalah?</p>
+    <input type="radio" name="soal13" value="a"> a) Statistik<br>
+    <input type="radio" name="soal13" value="b"> b) Keamanan makanan<br>
+    <input type="radio" name="soal13" value="c"> c) Pembuatan makanan<br>
+    <input type="radio" name="soal13" value="d"> d) Tindakan perlindungan<br>
+</div>
 
-        <div class="soal">
-            <h2>Soal 15:</h2>
-            <p>食品衛生の目的は何ですか？</p>
-            <p>a) <input type="radio" name="q15" value="a"> 食べ物を安全に保つこと</p>
-            <p>b) <input type="radio" name="q15" value="b"> 食品の賞味期限を短くすること</p>
-            <p>c) <input type="radio" name="q15" value="c"> 食品の味を変えること</p>
-            <p>d) <input type="radio" name="q15" value="d"> 食べ物を素早く作ること</p>
-        </div>
+<!-- Question 14 -->
+<div>
+    <p>14. "冷凍食品 (れいとうしょくひん)" adalah istilah untuk?</p>
+    <input type="radio" name="soal14" value="a"> a) Makanan beku<br>
+    <input type="radio" name="soal14" value="b"> b) Makanan cepat saji<br>
+    <input type="radio" name="soal14" value="c"> c) Produk pertanian<br>
+    <input type="radio" name="soal14" value="d"> d) Makanan olahan<br>
+</div>
 
-        <div class="soal">
-            <h2>Soal 16:</h2>
-            <p>「一般衛生管理」とはどのようなものですか？</p>
-            <p>a) <input type="radio" name="q16" value="a"> 特別な作業場だけで使うルール</p>
-            <p>b) <input type="radio" name="q16" value="b"> どの作業場でも共通して行われる基本的な衛生管理</p>
-            <p>c) <input type="radio" name="q16" value="c"> 工場の外でだけ使われるルール</p>
-            <p>d) <input type="radio" name="q16" value="d"> 食品の品質を落とすための管理</p>
-        </div>
+<!-- Question 15 -->
+<div>
+    <p>15. Apakah arti "消費者 (しょうひしゃ)" dalam konteks industri makanan?</p>
+    <input type="radio" name="soal15" value="a"> a) Penjual makanan<br>
+    <input type="radio" name="soal15" value="b"> b) Konsumen<br>
+    <input type="radio" name="soal15" value="c"> c) Produsen makanan<br>
+    <input type="radio" name="soal15" value="d"> d) Distributor<br>
+</div>
+<!-- Question 16 -->
+<div>
+    <p>16. Apa arti dari "バランス食 (ばらんすしょく)" dalam konteks diet sehat?</p>
+    <input type="radio" name="soal16" value="a"> a) Diet ketat<br>
+    <input type="radio" name="soal16" value="b"> b) Makanan seimbang<br>
+    <input type="radio" name="soal16" value="c"> c) Makanan cepat saji<br>
+    <input type="radio" name="soal16" value="d"> d) Makanan olahan<br>
+</div>
 
-        <div class="soal">
-            <h2>Soal 17:</h2>
-            <p>「物理的危害要因」として挙げられるものはどれですか？</p>
-            <p>a) <input type="radio" name="q17" value="a"> 細菌</p>
-            <p>b) <input type="radio" name="q17" value="b"> ガラス片</p>
-            <p>c) <input type="radio" name="q17" value="c"> 化学薬品</p>
-            <p>d) <input type="radio" name="q17" value="d"> アレルギー物質</p>
-        </div>
+<!-- Question 17 -->
+<div>
+    <p>17. Istilah "栄養素 (えいようそ)" dalam bahasa Jepang merujuk pada?</p>
+    <input type="radio" name="soal17" value="a"> a) Vitamin dan mineral<br>
+    <input type="radio" name="soal17" value="b"> b) Kalori<br>
+    <input type="radio" name="soal17" value="c"> c) Lemak<br>
+    <input type="radio" name="soal17" value="d"> d) Karbohidrat<br>
+</div>
 
-        <div class="soal">
-            <h2>Soal 18:</h2>
-            <p>次のうち、「物理的危害要因」として硬質異物に分類されるものはどれですか？</p>
-            <p>a) <input type="radio" name="q18" value="a"> 砂糖</p>
-            <p>b) <input type="radio" name="q18" value="b"> 金属片</p>
-            <p>c) <input type="radio" name="q18" value="c"> 魚の骨</p>
-            <p>d) <input type="radio" name="q18" value="d"> 酢</p>
-        </div>
+<!-- Question 18 -->
+<div>
+    <p>18. Apa istilah untuk "makanan organik" dalam bahasa Jepang?</p>
+    <input type="radio" name="soal18" value="a"> a) 有機食品 (ゆうきしょくひん)<br>
+    <input type="radio" name="soal18" value="b"> b) 加工食品 (かこうしょくひん)<br>
+    <input type="radio" name="soal18" value="c"> c) 冷凍食品 (れいとうしょくひん)<br>
+    <input type="radio" name="soal18" value="d"> d) 生鮮食品 (せいせんしょくひん)<br>
+</div>
 
-        <div class="soal">
-            <h2>Soal 19:</h2>
-            <p>「異物」とはどのようなものですか？</p>
-            <p>a) <input type="radio" name="q19" value="a"> 原材料に含まれている自然な成分</p>
-            <p>b) <input type="radio" name="q19" value="b"> 食品製造中に入ってしまった、入るべきではないもの</p>
-            <p>c) <input type="radio" name="q19" value="c"> 食品の一部として使用される添加物</p>
-            <p>d) <input type="radio" name="q19" value="d"> 全ての原材料に含まれている安全な成分</p>
-        </div>
+<!-- Question 19 -->
+<div>
+    <p>19. Apa arti dari istilah "食事 (しょくじ)"?</p>
+    <input type="radio" name="soal19" value="a"> a) Makanan ringan<br>
+    <input type="radio" name="soal19" value="b"> b) Hidangan<br>
+    <input type="radio" name="soal19" value="c"> c) Waktu makan<br>
+    <input type="radio" name="soal19" value="d"> d) Resep<br>
+</div>
 
-        <div class="soal">
-            <h2>Soal 20:</h2>
-            <p>物理的危害要因の例として、次のうち最も適切なものはどれですか？</p>
-            <p>a) <input type="radio" name="q20" value="a"> 殺菌されていない原材料</p>
-            <p>b) <input type="radio" name="q20" value="b"> 包丁での不適切な取り扱い</p>
-            <p>c) <input type="radio" name="q20" value="c"> 金属片やガラス片の混入</p>
-            <p>d) <input type="radio" name="q20" value="d"> 化学調味料の過剰使用</p>
-        </div>
+<!-- Question 20 -->
+<div>
+    <p>20. Istilah "調理 (ちょうり)" dalam bahasa Jepang merujuk pada?</p>
+    <input type="radio" name="soal20" value="a"> a) Pemasakan<br>
+    <input type="radio" name="soal20" value="b"> b) Penyimpanan<br>
+    <input type="radio" name="soal20" value="c"> c) Penyajian<br>
+    <input type="radio" name="soal20" value="d"> d) Pengemasan<br>
+</div>
+
+<!-- Question 21 -->
+<div>
+    <p>21. Apa istilah untuk "diet rendah kalori" dalam bahasa Jepang?</p>
+    <input type="radio" name="soal21" value="a"> a) 低カロリー食 (ていかろりーしょく)<br>
+    <input type="radio" name="soal21" value="b"> b) 健康的な食事 (けんこうてきなしょくじ)<br>
+    <input type="radio" name="soal21" value="c"> c) 栄養価の高い食事 (えいようかのたかいしょくじ)<br>
+    <input type="radio" name="soal21" value="d"> d) 食品衛生 (しょくひんえいせい)<br>
+</div>
+
+<!-- Question 22 -->
+<div>
+    <p>22. Apa arti dari istilah "加工食品 (かこうしょくひん)"?</p>
+    <input type="radio" name="soal22" value="a"> a) Makanan alami<br>
+    <input type="radio" name="soal22" value="b"> b) Makanan olahan<br>
+    <input type="radio" name="soal22" value="c"> c) Makanan siap saji<br>
+    <input type="radio" name="soal22" value="d"> d) Makanan beku<br>
+</div>
+
+<!-- Question 23 -->
+<div>
+    <p>23. Istilah "食文化 (しょくぶんか)" merujuk pada?</p>
+    <input type="radio" name="soal23" value="a"> a) Budaya makanan<br>
+    <input type="radio" name="soal23" value="b"> b) Tradisi memasak<br>
+    <input type="radio" name="soal23" value="c"> c) Makanan tradisional<br>
+    <input type="radio" name="soal23" value="d"> d) Kebiasaan makan<br>
+</div>
+
+<!-- Question 24 -->
+<div>
+    <p>24. Apa arti dari istilah "食品安全 (しょくひんあんぜん)"?</p>
+    <input type="radio" name="soal24" value="a"> a) Keamanan pangan<br>
+    <input type="radio" name="soal24" value="b"> b) Kualitas makanan<br>
+    <input type="radio" name="soal24" value="c"> c) Proses pengolahan<br>
+    <input type="radio" name="soal24" value="d"> d) Penilaian makanan<br>
+</div>
+
+<!-- Question 25 -->
+<div>
+    <p>25. Istilah "食べ放題 (たべほうだい)" merujuk pada?</p>
+    <input type="radio" name="soal25" value="a"> a) Makanan gratis<br>
+    <input type="radio" name="soal25" value="b"> b) Makanan sepuasnya<br>
+    <input type="radio" name="soal25" value="c"> c) Makanan cepat saji<br>
+    <input type="radio" name="soal25" value="d"> d) Makanan olahan<br>
+</div>
+
+<!-- Question 26 -->
+<div>
+    <p>26. Apa yang dimaksud dengan "醤油 (しょうゆ)" dalam masakan Jepang?</p>
+    <input type="radio" name="soal26" value="a"> a) Bumbu pedas<br>
+    <input type="radio" name="soal26" value="b"> b) Saus kedelai<br>
+    <input type="radio" name="soal26" value="c"> c) Madu<br>
+    <input type="radio" name="soal26" value="d"> d) Minyak goreng<br>
+</div>
+
+<!-- Question 27 -->
+<div>
+    <p>27. Istilah "米 (こめ)" dalam bahasa Jepang berarti?</p>
+    <input type="radio" name="soal27" value="a"> a) Gandum<br>
+    <input type="radio" name="soal27" value="b"> b) Jagung<br>
+    <input type="radio" name="soal27" value="c"> c) Beras<br>
+    <input type="radio" name="soal27" value="d"> d) Kacang<br>
+</div>
+
+<!-- Question 28 -->
+<div>
+    <p>28. Apa yang dimaksud dengan "うどん" dalam konteks makanan Jepang?</p>
+    <input type="radio" name="soal28" value="a"> a) Roti<br>
+    <input type="radio" name="soal28" value="b"> b) Mie tepung terigu<br>
+    <input type="radio" name="soal28" value="c"> c) Nasi<br>
+    <input type="radio" name="soal28" value="d"> d) Sereal<br>
+</div>
+
+<!-- Question 29 -->
+<div>
+    <p>29. Istilah "鍋料理 (なべりょうり)" merujuk pada?</p>
+    <input type="radio" name="soal29" value="a"> a) Masakan panggang<br>
+    <input type="radio" name="soal29" value="b"> b) Masakan rebus<br>
+    <input type="radio" name="soal29" value="c"> c) Masakan dalam panci<br>
+    <input type="radio" name="soal29" value="d"> d) Masakan goreng<br>
+</div>
+
+<!-- Question 30 -->
+<div>
+    <p>30. Apa arti dari "生魚 (なまざかな)" dalam konteks makanan?</p>
+    <input type="radio" name="soal30" value="a"> a) Ikan asap<br>
+    <input type="radio" name="soal30" value="b"> b) Ikan mentah<br>
+    <input type="radio" name="soal30" value="c"> c) Ikan matang<br>
+    <input type="radio" name="soal30" value="d"> d) Ikan beku<br>
+</div>
+
+<!-- Question 31 -->
+<div>
+    <p>31. Apa istilah untuk "kue beras" dalam bahasa Jepang?</p>
+    <input type="radio" name="soal31" value="a"> a) ケーキ (けーき)<br>
+    <input type="radio" name="soal31" value="b"> b) お餅 (おもち)<br>
+    <input type="radio" name="soal31" value="c"> c) クッキー (くっきー)<br>
+    <input type="radio" name="soal31" value="d"> d) パン (ぱん)<br>
+</div>
+
+<!-- Question 32 -->
+<div>
+    <p>32. Istilah "新鮮 (しんせん)" berarti?</p>
+    <input type="radio" name="soal32" value="a"> a) Segar<br>
+    <input type="radio" name="soal32" value="b"> b) Busuk<br>
+    <input type="radio" name="soal32" value="c"> c) Kering<br>
+    <input type="radio" name="soal32" value="d"> d) Olahan<br>
+</div>
+
+<!-- Question 33 -->
+<div>
+    <p>33. Apa yang dimaksud dengan "スナック" dalam konteks makanan?</p>
+    <input type="radio" name="soal33" value="a"> a) Makanan berat<br>
+    <input type="radio" name="soal33" value="b"> b) Camilan<br>
+    <input type="radio" name="soal33" value="c"> c) Hidangan utama<br>
+    <input type="radio" name="soal33" value="d"> d) Makanan penutup<br>
+</div>
+
+<!-- Question 34 -->
+<div>
+    <p>34. Istilah "フルーツ" dalam bahasa Jepang berarti?</p>
+    <input type="radio" name="soal34" value="a"> a) Sayuran<br>
+    <input type="radio" name="soal34" value="b"> b) Buah<br>
+    <input type="radio" name="soal34" value="c"> c) Kacang<br>
+    <input type="radio" name="soal34" value="d"> d) Biji-bijian<br>
+</div>
+
+<!-- Question 35 -->
+<div>
+    <p>35. Apa yang dimaksud dengan "調味料 (ちょうみりょう)"?</p>
+    <input type="radio" name="soal35" value="a"> a) Bahan makanan<br>
+    <input type="radio" name="soal35" value="b"> b) Bumbu masak<br>
+    <input type="radio" name="soal35" value="c"> c) Sayuran<br>
+    <input type="radio" name="soal35" value="d"> d) Daging<br>
+</div>
+
+<!-- Question 36 -->
+<div>
+    <p>36. Istilah "レシピ" dalam bahasa Jepang merujuk pada?</p>
+    <input type="radio" name="soal36" value="a"> a) Daftar belanja<br>
+    <input type="radio" name="soal36" value="b"> b) Resep<br>
+    <input type="radio" name="soal36" value="c"> c) Menu<br>
+    <input type="radio" name="soal36" value="d"> d) Katalog makanan<br>
+</div>
+
+<!-- Question 37 -->
+<div>
+    <p>37. Apa arti dari istilah "デザート" dalam konteks makanan?</p>
+    <input type="radio" name="soal37" value="a"> a) Hidangan pembuka<br>
+    <input type="radio" name="soal37" value="b"> b) Makanan utama<br>
+    <input type="radio" name="soal37" value="c"> c) Makanan penutup<br>
+    <input type="radio" name="soal37" value="d"> d) Minuman<br>
+</div>
+
+<!-- Question 38 -->
+<div>
+    <p>38. Apa yang dimaksud dengan "食品廃棄物 (しょくひんはいきぶつ)"?</p>
+    <input type="radio" name="soal38" value="a"> a) Makanan sehat<br>
+    <input type="radio" name="soal38" value="b"> b) Limbah makanan<br>
+    <input type="radio" name="soal38" value="c"> c) Makanan terbuang<br>
+    <input type="radio" name="soal38" value="d"> d) Makanan sisa<br>
+</div>
+
+<!-- Question 39 -->
+<div>
+    <p>39. Istilah "冷凍 (れいとう)" dalam konteks makanan berarti?</p>
+    <input type="radio" name="soal39" value="a"> a) Memasak<br>
+    <input type="radio" name="soal39" value="b"> b) Membekukan<br>
+    <input type="radio" name="soal39" value="c"> c) Menghangatkan<br>
+    <input type="radio" name="soal39" value="d"> d) Menyajikan<br>
+</div>
+
+<!-- Question 40 -->
+<div>
+    <p>40. Apa arti dari "食物繊維 (しょくもつせんい)"?</p>
+    <input type="radio" name="soal40" value="a"> a) Karbohidrat<br>
+    <input type="radio" name="soal40" value="b"> b) Serat makanan<br>
+    <input type="radio" name="soal40" value="c"> c) Protein<br>
+    <input type="radio" name="soal40" value="d"> d) Lemak<br>
+</div>
+
+<!-- Question 41 -->
+<div>
+    <p>41. Apa yang dimaksud dengan "食事療法 (しょくじりょうほう)"?</p>
+    <input type="radio" name="soal41" value="a"> a) Pengobatan tradisional<br>
+    <input type="radio" name="soal41" value="b"> b) Terapi makanan<br>
+    <input type="radio" name="soal41" value="c"> c) Diet seimbang<br>
+    <input type="radio" name="soal41" value="d"> d) Nutrisi tambahan<br>
+</div>
+
+<!-- Question 42 -->
+<div>
+    <p>42. Apa istilah untuk "bubur nasi" dalam bahasa Jepang?</p>
+    <input type="radio" name="soal42" value="a"> a) うどん (うどん)<br>
+    <input type="radio" name="soal42" value="b"> b) おかゆ (おかゆ)<br>
+    <input type="radio" name="soal42" value="c"> c) ご飯 (ごはん)<br>
+    <input type="radio" name="soal42" value="d"> d) パスタ (ぱすた)<br>
+</div>
+
+<!-- Question 43 -->
+<div>
+    <p>43. Istilah "甘味料 (あまみりょう)" merujuk pada?</p>
+    <input type="radio" name="soal43" value="a"> a) Bahan pengawet<br>
+    <input type="radio" name="soal43" value="b"> b) Pemanis<br>
+    <input type="radio" name="soal43" value="c"> c) Bumbu masak<br>
+    <input type="radio" name="soal43" value="d"> d) Pemanis alami<br>
+</div>
+
+<!-- Question 44 -->
+<div>
+    <p>44. Apa yang dimaksud dengan "食習慣 (しょくしゅうかん)"?</p>
+    <input type="radio" name="soal44" value="a"> a) Kebiasaan makan<br>
+    <input type="radio" name="soal44" value="b"> b) Jenis makanan<br>
+    <input type="radio" name="soal44" value="c"> c) Diet ketat<br>
+    <input type="radio" name="soal44" value="d"> d) Waktu makan<br>
+</div>
+
+<!-- Question 45 -->
+<div>
+    <p>45. Istilah "栄養価 (えいようか)" dalam konteks makanan berarti?</p>
+    <input type="radio" name="soal45" value="a"> a) Nutrisi<br>
+    <input type="radio" name="soal45" value="b"> b) Kalori<br>
+    <input type="radio" name="soal45" value="c"> c) Kualitas gizi<br>
+    <input type="radio" name="soal45" value="d"> d) Makanan sehat<br>
+</div>
+
+<!-- Question 46 -->
+<div>
+    <p>46. Apa istilah untuk "minuman beralkohol" dalam bahasa Jepang?</p>
+    <input type="radio" name="soal46" value="a"> a) ソフトドリンク (そふとどりんく)<br>
+    <input type="radio" name="soal46" value="b"> b) アルコール飲料 (あるこーるいんりょう)<br>
+    <input type="radio" name="soal46" value="c"> c) お茶 (おちゃ)<br>
+    <input type="radio" name="soal46" value="d"> d) ジュース (じゅーす)<br>
+</div>
+
+<!-- Question 47 -->
+<div>
+    <p>47. Apa yang dimaksud dengan "食卓 (しょくたく)"?</p>
+    <input type="radio" name="soal47" value="a"> a) Meja makan<br>
+    <input type="radio" name="soal47" value="b"> b) Dapur<br>
+    <input type="radio" name="soal47" value="c"> c) Ruang makan<br>
+    <input type="radio" name="soal47" value="d"> d) Lemari makanan<br>
+</div>
+
+<!-- Question 48 -->
+<div>
+    <p>48. Istilah "スパイス" dalam bahasa Jepang berarti?</p>
+    <input type="radio" name="soal48" value="a"> a) Bumbu<br>
+    <input type="radio" name="soal48" value="b"> b) Rempah-rempah<br>
+    <input type="radio" name="soal48" value="c"> c) Sayuran<br>
+    <input type="radio" name="soal48" value="d"> d) Buah<br>
+</div>
+
+<!-- Question 49 -->
+<div>
+    <p>49. Apa yang dimaksud dengan "冷蔵庫 (れいぞうこ)"?</p>
+    <input type="radio" name="soal49" value="a"> a) Oven<br>
+    <input type="radio" name="soal49" value="b"> b) Kompor<br>
+    <input type="radio" name="soal49" value="c"> c) Kulkas<br>
+    <input type="radio" name="soal49" value="d"> d) Panci<br>
+</div>
+
+<!-- Question 50 -->
+<div>
+    <p>50. Istilah "試食 (ししょく)" dalam bahasa Jepang berarti?</p>
+    <input type="radio" name="soal50" value="a"> a) Makan siang<br>
+    <input type="radio" name="soal50" value="b"> b) Mencicipi makanan<br>
+    <input type="radio" name="soal50" value="c"> c) Makanan penutup<br>
+    <input type="radio" name="soal50" value="d"> d) Masakan utama<br>
+</div>
+
+        
+        <!-- Add other questions here following the same structure -->
 
         <button type="button" onclick="calculateScore()">Kirim Jawaban</button>
     </form>
-
-    <div class="result" id="result"></div>
+    
+    <div id="result" class="result"></div>
 
     <script>
         function calculateScore() {
             const correctAnswers = {
-                q1: 'a',
-                q2: 'c',
-                q3: 'b',
-                q4: 'c',
-                q5: 'a',
-                q6: 'a',
-                q7: 'c',
-                q8: 'b',
-                q9: 'a',
-                q10: 'b',
-                q11: 'a',
-                q12: 'c',
-                q13: 'a',
-                q14: 'b',
-                q15: 'a',
-                q16: 'b',
-                q17: 'b',
-                q18: 'b',
-                q19: 'b',
-                q20: 'c',
+                soal1: "b",  // Pengendalian benda asing
+                soal2: "a",  // Thomas Edison
+                soal3: "b",  // Ini penting
+                soal4: "b",  // Pembuatan
+                soal5: "b",  // Makanan pendamping
+                soal6: "a",  // 冷凍食品
+                soal7: "b",  // 魚の缶詰
+                soal8: "a",  // 特定技能1号
+                soal9: "b",  // Kementerian Pertanian Kehutanan dan Perikanan
+                soal10: "b", // 統計
+                soal11: "a", // Peralatan perlindungan keselamatan
+                soal12: "c", // Kehidupan
+                soal13: "b", // Keamanan makanan
+                soal14: "a", // Makanan beku
+                soal15: "b", // Faktor bahaya
+                soal16: "a", // Keahlian tertentu tingkat 1
+                soal17: "b", // Beberapa tahun
+                soal18: "b", // Triliun yen
+                soal19: "a", // Penyakit akibat makanan
+                soal20: "a", // Jumlah produksi
+                soal21: "a", // Nilai produksi domestik
+                soal22: "a", // 加工食品
+                soal23: "b", // Ikan kaleng
+                soal24: "b", // Hukum tentang keamanan makanan
+                soal25: "a", // Kementerian Kesehatan Tenaga Kerja dan Kesejahteraan
+                soal26: "b", // Kementerian Pertanian Kehutanan dan Perikanan
+                soal27: "a", // 冷凍食品
+                soal28: "a", // Manajemen keamanan makanan
+                soal29: "c", // Memasak
+                soal30: "b", // Angka atau nilai numerik
+                soal31: "c", // Kontaminasi benda asing
+                soal32: "b", // Pengawasan kualitas
+                soal33: "c", // Menjamin keamanan dan kualitas makanan
+                soal34: "b", // Manajemen proses produksi
+                soal35: "c", // Pencegahan kontaminasi
+                soal36: "a", // Keselamatan dan kesehatan kerja
+                soal37: "c", // Menjaga kebersihan dan keamanan makanan
+                soal38: "b", // Tanggal kedaluwarsa
+                soal39: "b", // Bahan tambahan makanan
+                soal40: "a", // 原材料管理
+                soal41: "b", // Makanan beku
+                soal42: "a", // Pengujian kualitas produk makanan
+                soal43: "b", // Pembersihan
+                soal44: "b", // Industri pengolahan makanan
+                soal45: "b", // Standar kebersihan
+                soal46: "b", // Pengemasan
+                soal47: "b", // Suhu ruangan
+                soal48: "b", // Pengendalian benda asing
+                soal49: "b", // Suhu
+                soal50: "b", // Menghindari kontaminasi benda asing
+                // Add other correct answers here
             };
-
+            
             let score = 0;
             const totalQuestions = Object.keys(correctAnswers).length;
 
-            for (const [question, correctAnswer] of Object.entries(correctAnswers)) {
+            for (const question in correctAnswers) {
                 const userAnswer = document.querySelector(`input[name="${question}"]:checked`);
-                if (userAnswer && userAnswer.value === correctAnswer) {
+                if (userAnswer && userAnswer.value === correctAnswers[question]) {
                     score++;
                 }
             }
 
-            const resultText = `Skor Anda adalah ${score} dari ${totalQuestions}.`;
-            document.getElementById("result").innerText = resultText;
-
+            document.getElementById('result').innerText = `Skor Anda: ${score} dari ${totalQuestions}`;
+            
             // Ganti nomor WhatsApp di sini
-            const phoneNumber = "6281366943721"; // Ganti dengan nomor WhatsApp Anda
-            const message = encodeURIComponent(resultText);
-            const whatsappUrl = `https://api.whatsapp.com/send?phone=${phoneNumber}&text=${message}`;
-            window.open(whatsappUrl, "_blank");
+            //const phoneNumber = "6281366943721"; // Ganti dengan nomor WhatsApp Anda
+            //const message = encodeURIComponent(`Skor Anda adalah ${score} dari ${totalQuestions}.`);
+            //const whatsappUrl = `https://api.whatsapp.com/send?phone=${phoneNumber}&text=${message}`;
+            //window.open(whatsappUrl, "_blank");
         }
     </script>
 </body>
